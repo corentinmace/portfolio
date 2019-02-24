@@ -1,0 +1,63 @@
+.sideInfo {
+  width: 50px;
+  position: sticky;
+  text-align: center;
+  top: 50%;
+  float: right;
+  display: none;
+  z-index: 1000;
+}
+
+.navElement{
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+  font-size: 120%;
+  transform: rotate(-90deg);
+}
+
+.navElement:hover {
+  opacity: 1;
+}
+
+.navhome::before {
+  padding-right: 10px;
+  content: "About";
+  opacity: 0.2;
+  color: white;
+}
+
+.navabout::before {
+  padding-right: 10px;
+  content: "Works";
+  opacity: 0.2;
+  color: white;
+}
+
+.navabout::after {
+  padding-left: 10px;
+  content: "Home";
+  opacity: 0.2;
+  color: white;
+}
+
+.navworks::before {
+  padding-right: 10px;
+  content: "Contact";
+  opacity: 0.2;
+  color: white;
+}
+
+.navworks::after {
+  padding-left: 10px;
+  content: "About";
+  opacity: 0.2;
+  color: white;
+}
+
+.navcontact::after {
+  padding-left: 10px;
+  content: "Works";
+  opacity: 0.2;
+  color: white;
+}
