@@ -10,7 +10,7 @@
 
 .navElement{
   text-decoration: none;
-  color: white;
+  color: black;
   opacity: 1;
   font-size: 120%;
   transform: rotate(-90deg);
@@ -24,40 +24,40 @@
   padding-right: 10px;
   content: "About";
   opacity: 0.2;
-  color: white;
+  color: black;
 }
 
 .navabout::before {
   padding-right: 10px;
   content: "Works";
   opacity: 0.2;
-  color: white;
+  color: black;
 }
 
 .navabout::after {
   padding-left: 10px;
   content: "Home";
   opacity: 0.2;
-  color: white;
+  color: black;
 }
 
 .navworks::before {
   padding-right: 10px;
   content: "Contact";
   opacity: 0.2;
-  color: white;
+  color: black;
 }
 
 .navworks::after {
   padding-left: 10px;
   content: "About";
   opacity: 0.2;
-  color: white;
+  color: black;
 }
 
 .navcontact::after {
   padding-left: 10px;
   content: "Works";
   opacity: 0.2;
-  color: white;
+  color: black;
 }

@@ -5,11 +5,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background-color: #FFF;
 }
 
 #accueil {
-  background: url(../img/photo.jpg);
+  background: url(../img/photo/photo.jpg);
   background-size:cover;
   background-repeat:no-repeat;
   background-position: center;
@@ -17,7 +17,7 @@ body {
   height: 100vh;
 }
 #about, #works, #contact {
-  min-height: 100vh;
+  min-height: auto;
   margin: auto;
   width: 95%;
 }
@@ -35,24 +35,8 @@ body {
   height: 500px;
   width: 500px;
 }
-.littleSVG {
-  display: flex;
-  justify-content: center;
-  position: sticky;
-  opacity: 0.3;
-  left: 50%;
-  top: 0;
-  width: 100vw;
-  transition: opacity ease 0.7s;
-}
-.littleSVG img {
-  height: 70px;
-  width: 70px;
-}
-.littleSVG:hover{
-  opacity: 1;
-  transition: opacity ease 0.7s;
-}
+
+
 .title {
   position: absolute;
   text-align: center;
@@ -92,10 +76,11 @@ body {
   left: 0;
 }
 
-.ml11 .letter {
+.ml11 .letter{
   display: inline-block;
   line-height: 1em;
 }
+
 
 #arrow_down {
   position: absolute;
@@ -145,43 +130,83 @@ body {
   max-height: 70px;
 }
 
-.trans--grow1, .trans--grow2, .trans--grow3{
-  -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
-  transition: width 1s  ease-out;
-  width : 0%;
-
-}
-.grow{
-  width:100%;
-
-}
-.hr1{
-  margin-left:0;
-}
-.hr2{
-  margin-right:0;
-}
 hr{
   width: auto;
   margin-top: 20px;
   padding: 3px 0;
   border: none;
-  background-color: #FFF;
+  background-color: #000;
   letter-spacing: 5px;
 }
 
-.underLine{
-  position: relative;
+
+
+h1 {
+  letter-spacing: 15px;
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
 }
-.underLine:after{
-  content: '';
-  position: absolute;
-  border-bottom: 3px solid white;
-  bottom: 0;
-  left: 0;
-  right: 100%;
-  transition: .3s;
+.jumper {
+  background-color: #000;
+  height: 5vh;
 }
-.underLine:hover:after{
-  right: 92%;
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container-project {
+  width: 35%;
+  height: 35%;
+  border: 3px solid black;
+}
+
+h2 {
+  margin: 10px;
+}
+
+h3 {
+  margin: 20px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 100px;
+
+}
+.overlay {
+  display: flex;
+
+justify-content: center;
+  align-items: center;
+}
+.container-skill {
+  text-align: center;
+    position: relative;
+  padding: 0;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.container-skill .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    color: #FFF;
+    border-radius: 100px;
+    transition: opacity ease 0.5s;
+}
+.container-skill:hover .overlay {
+  transition: opacity ease 0.5s;
+    opacity: 1;
+    background: rgba(0, 0, 0, .8);
+}
+.text{
+  font-size: 120%;
+
 }
