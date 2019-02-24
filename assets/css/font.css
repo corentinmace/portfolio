@@ -9,3 +9,8 @@ body {
   src: url(../font/Kiona-Regular.ttf);
   font-family: Kiona-Regular;
 }
+
+@font-face {
+  src: url(../font/Kiona-Regular.ttf);
+  font-family: Kiona;
+}
