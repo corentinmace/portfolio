@@ -5,7 +5,7 @@ function getElementOffset(id) {
     var elem = document.querySelector("#" + id)
     var rect = elem.getBoundingClientRect()
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop
-    return rect.top + scrollTop + height
+    return rect.top + scrollTop + height - 200
 }
 
 window.addEventListener("scroll", function() {
@@ -23,7 +23,7 @@ window.addEventListener("scroll", function() {
         document.getElementById("nav").classList.remove("navworks");
       document.getElementById("nav").classList.add("navabout");
         document.getElementById("nav").innerHTML = "About";
-        
+
 
 
     } else if (window.scrollY <= getElementOffset("works")) {
