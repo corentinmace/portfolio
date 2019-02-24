@@ -21,15 +21,15 @@ body {
 .logoSVG{
   position: absolute;
   text-align: center;
-  top: 25%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   }
 
 .logoSVG img {
-  height: 500px;
-  width: 500px;
+  height: 350px;
+  width: 350px;
   font-family: Kiona-Regular;
 }
 
