@@ -15,8 +15,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="assets/js/sideInfo.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/loader.css">
   </head>
   <body>
+    <div id="loader-wrapper">
+       <div id="loader"></div>
+       <div class="loader-section section-left"></div>
+       <div class="loader-section section-right"></div>
+    </div>
+    <div id="content">
     <main>
       <div class="sideInfo">
         <p id="nav" class="navElement navhome">Home</p>
@@ -40,14 +47,21 @@
       <div class="jumper"></div>
       <div id="about">
         <h1 data-aos="zoom-in">/ ABOUT ME /</h1>
-        <h2>Corentin Macé</h2>
-        <h3>Developer / Photographer</h3>
-        <div class="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 data-aos="fade-right">Corentin Macé</h2>
+        <h3 data-aos="zoom-in">Developer / Photographer</h3>
+        <div class="text-about">
+            <p data-aos="zoom-in">My name is Corentin Macé, I'm living in Berre l'etang, near Marseilles.
+            I'm actually a student of Ynov Digital School, where i'm learning web developement, software developement and cyber-security, basically, it's computer Engineering studies</p>
+            <p data-aos="fade-left">I'm passionated by Photography, Computers, Videos Games, Bass, I got these from my father</p>
+            <p data-aos="zoom-in">I'm passionated by the infinity of space, I love taking pictures of stars, moon ect..</p>
+            <p data-aos="fade-left">I'm a bassist in a band of stoner rock called Flyin' Distortion, and in a band called Nearby Pond</p>
+            <p data-aos="zoom-in">I'm a beginner in programing, and with my friend Enzo Avagliano we own a Discord Server called Program'Ligue FR. It's a french community of programmer.</p>
+
         </div>
-        <h2>My Skills</h2>
+        <h6 data-aos="zoom-in">My Skills</h6>
         <div class="skills">
-          <div class="container-skill">
+          <div  data-aos="fade-up"
+                data-aos-delay="100" class="container-skill">
             <img src="assets/img/svg/html5.svg" alt="" width="100px"
             height="100px">
             <div class="overlay">
@@ -57,7 +71,9 @@
             </div>
             <p>HTML</p>
           </div>
-          <div class="container-skill">
+          <div   data-aos="fade-up"
+                data-aos-delay="200"
+                class="container-skill">
           <img src="assets/img/svg/css3.svg" alt="" width="100px"
           height="100px">
           <div class="overlay">
@@ -67,7 +83,9 @@
           </div>
             <p>CSS</p>
           </div>
-          <div class="container-skill">
+          <div   data-aos="fade-up"
+                data-aos-delay="300"
+                class="container-skill">
           <img src="assets/img/svg/javascript.svg" alt="" width="100px"
           height="100px">
           <div class="overlay">
@@ -77,7 +95,9 @@
           </div>
             <p>Javascript</p>
           </div>
-          <div class="container-skill">
+          <div   data-aos="fade-up"
+                data-aos-delay="400"
+                class="container-skill">
           <img src="assets/img/svg/nodejs.svg" alt="" width="100px"
           height="100px">
           <div class="overlay">
@@ -87,7 +107,9 @@
           </div>
             <p>NodeJS</p>
           </div>
-          <div class="container-skill">
+          <div   data-aos="fade-down"
+                data-aos-delay="500"
+                class="container-skill">
           <img src="assets/img/svg/photography.svg" alt="" width="100px"
           height="100px">
           <div class="overlay">
@@ -97,7 +119,9 @@
           </div>
             <p>Photography</p>
           </div>
-          <div class="container-skill">
+          <div   data-aos="fade-down"
+                data-aos-delay="600"
+                class="container-skill">
           <img src="assets/img/svg/photoshop.svg" alt="" width="100px"
           height="100px">
           <div class="overlay">
@@ -107,7 +131,9 @@
           </div>
             <p>Photoshop</p>
           </div>
-          <div class="container-skill">
+          <div   data-aos="fade-down"
+                data-aos-delay="700"
+                class="container-skill">
           <img src="assets/img/svg/lightroom.svg" alt="" width="100px"
           height="100px">
           <div class="overlay">
@@ -117,7 +143,9 @@
           </div>
             <p>Lightroom</p>
           </div>
-          <div class="container-skill">
+          <div   data-aos="fade-down"
+                data-aos-delay="800"
+                class="container-skill">
           <img src="assets/img/svg/premiere.svg" alt="" width="100px"
           height="100px">
           <div class="overlay">
@@ -127,39 +155,101 @@
           </div>
             <p>Premiere Pro</p>
           </div>
-
-        </div>
       </div>
+    </div>
       <div class="jumper"></div>
       <div id="works">
         <h1 data-aos="zoom-in">/ MY WORKS /</h1>
         <div class="projects">
-          <div class="container-project">item 1</div>
-          <div class="container-project">item 2</div>
-          <div class="container-project">item 3</div>
-          <div class="container-project">item 4</div>
-          <div class="container-project">item 5</div>
-          <div class="container-project">item 6</div>
-          <div class="container-project">item 7</div>
-          <div class="container-project">item 8</div>
+          <div  data-aos="zoom-in"
+                data-aos-delay="100"
+                class="container-project">
+            <h2>Discord RPG BOT</h2>
+            <h5>Language : DiscordJS (NodeJs)</h5>
+            <h4>Description : A Discord BOT that will make a RPG game automaticly</h3>
+            <h4><a href="https://github.com/corentinmace/bot-discord-jdr">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
+          </div>
+          <div  data-aos="zoom-in"
+                data-aos-delay="200"
+                class="container-project">
+            <h2>Program'Ligue BOT</h2>
+            <h5>Language : DiscordJS (NodeJs)</h5>
+            <h4>Description : Discord BOT for the server Program'Ligue FR.</h3>
+            <h4><a href="https://github.com/corentinmace/program-ligue-djs.bot">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
+          </div>
+          <div  data-aos="zoom-in"
+                data-aos-delay="300"
+                class="container-project">
+            <h2>Portfolio</h2>
+            <h5>Language : HTML - CSS - Javascript</h5>
+            <h4>Description : My portfolio</h3>
+            <h4><a href="https://github.com/corentinmace/portfolio">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a>
+</h4>
+          </div>
+          <div  data-aos="zoom-in"
+                data-aos-delay="400"
+                class="container-project">
+            <h2>GoPro Timelapse</h2>
+            <h5>Language : Arduino</h5>
+            <h4>Description : That's a module that will be able to go from a circular direction to another with a motor and a choice</h3>
+            <h4><a href="https://github.com/corentinmace/timelapse-gopro-arduino">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
+          </div>
+          <div  data-aos="zoom-in"
+                data-aos-delay="500"
+                class="container-project">
+            <h2>Thermometer on 4-digit</h2>
+            <h5>Language : Arduino</h5>
+            <h4>Description : Thermometer that will display the temperature on a 4-digit module</h3>
+            <h4><a href="https://github.com/corentinmace/temp-4digit-arduino">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
+          </div>
+          <div  data-aos="zoom-in"
+                data-aos-delay="600"
+                class="container-project">
+            <h2>Vulnerable Website</h2>
+            <h5>Language : PHP - HTML - CSS - Javascript</h5>
+            <h4>Description : Vulnerable Website done for my startup "Hacking Challenge"</h3>
+            <h4><a href="https://github.com/corentinmace/vulnerable-website">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
+          </div>
+          <div  data-aos="zoom-in"
+                data-aos-delay="700"
+                class="container-project">
+            <h2>Personnal Website</h2>
+            <h5>Language : HTML - CSS - Javascript</h5>
+            <h4>Description : My personnal website</h3>
+            <h4><a href="https://github.com/corentinmace/personnal-website">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4></div>
+            <div  data-aos="zoom-in"
+                  data-aos-delay="800"
+                  class="container-project">
+            <h2>NodeJS Website</h2>
+            <h5>Language : NodeJS - HTML - CSS - Javascript</h5>
+            <h4>Description : My personnal website in NodeJS</h3>
+            <h4><a href="https://github.com/corentinmace/node-js-personnal-website">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4></div>
+          </div>
         </div>
-      </div>
       <div class="jumper"></div>
       <div id="contact">
         <h1 data-aos="zoom-in">/ CONTACT /</h1>
-
       </div>
-
-
     </main>
     <footer>
-
+      <div class="jumper">
+        <p>Copyright &copy; Corentin Macé | 2019 </p>
+      </div>
     </footer>
       <script src="assets/js/onload-script.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();
       </script>
+      <script type="text/javascript">
+         $(document).ready(function() {
 
+         setTimeout(function(){
+             $('body').addClass('loaded');
+
+         }, 1000);
+
+         });
+        </script>
   </body>
 </html>

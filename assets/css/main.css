@@ -16,11 +16,7 @@ body {
   background-attachment: fixed;
   height: 100vh;
 }
-#about, #works, #contact {
-  min-height: auto;
-  margin: auto;
-  width: 95%;
-}
+
 
 .logoSVG{
   position: absolute;
@@ -151,31 +147,59 @@ h1 {
   background-color: #000;
   height: 5vh;
 }
-
+.jumper p {
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+}
 .projects {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
+  padding: 50px;
+  text-align: center;
 }
 .container-project {
-  width: 35%;
-  height: 35%;
-  border: 3px solid black;
+  width: 30%;
+  height: 50%;
+  background-color: #FFF;
+  /* border: 3px solid black; */
+  border-radius: 10px;
+    transition: all 1s ease-out;
+}
+.container-project a {
+  text-decoration: none;
+  color: black;
+  transition: opacity ease 0.5s;
+
+}
+.container-project a:hover {
+  opacity: 0.5;
+    transition: opacity ease .5s;
 }
 
+.container-project:hover {
+  background-color: #383838;
+  color: white;
+  transition: all 1s ease-out;
+}
 h2 {
-  margin: 10px;
+  font-size: 3em;
+  margin: 30px;
 }
-
+h6 {
+    font-size: 3em;
+    text-align: center;
+}
 h3 {
-  margin: 20px;
+  font-size: 2em;
+  margin: 50px;
 }
 .skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 100px;
-
 }
 .overlay {
   display: flex;
@@ -209,4 +233,13 @@ justify-content: center;
 .text{
   font-size: 120%;
 
+}
+.text-about {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.text-about p {
+  font-size: 1.5em;
+  letter-spacing: 2px;
 }
