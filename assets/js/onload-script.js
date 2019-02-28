@@ -1,3 +1,12 @@
+$(document).ready(function() {
+
+    setTimeout(function() {
+        $('body').addClass('loaded');
+
+    }, 1000);
+
+});
+
 // Wrap every letter in a span
 window.onload = function() {
 

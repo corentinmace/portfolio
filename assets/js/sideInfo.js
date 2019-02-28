@@ -5,7 +5,7 @@ function getElementOffset(id) {
     var elem = document.querySelector("#" + id)
     var rect = elem.getBoundingClientRect()
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop
-    return rect.top + scrollTop + height - 200
+    return rect.top + scrollTop + height - 500
 }
 
 window.addEventListener("scroll", function() {
