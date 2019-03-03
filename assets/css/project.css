@@ -1,0 +1,35 @@
+header {
+  background-color: #000;
+}
+header h1 {
+  color: white;
+}
+main {
+  min-height: 78vh;
+}
+
+p {
+  margin: 55px;
+}
+
+progress {
+  margin-left: 100px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+iframe {
+  margin-left: 70px;
+}
+
+footer p {
+  margin: 0;
+}
