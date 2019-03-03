@@ -21,7 +21,7 @@ body {
 .logoSVG{
   position: absolute;
   text-align: center;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -37,7 +37,7 @@ body {
 .title {
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 55%;
   left: 50%;
   color: white;
   transform: translate(-50%, -50%);
