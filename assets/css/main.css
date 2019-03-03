@@ -30,7 +30,6 @@ body {
 .logoSVG img {
   height: 350px;
   width: 350px;
-  font-family: Kiona-Regular;
 }
 
 
@@ -184,7 +183,7 @@ h1 {
   color: white;
   transition: all 1s ease-out;
 }
-h2 {
+.container-project h2, h2 {
   font-size: 3em;
   margin: 30px;
 }

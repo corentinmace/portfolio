@@ -3,3 +3,9 @@
     font-size: 2.5em;
   }
 }
+
+@media only screen and (max-width: 1080px) {
+  .container-project h2 {
+    font-size: 2em;
+  }
+}
