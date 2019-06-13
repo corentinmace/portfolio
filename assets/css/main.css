@@ -24,8 +24,7 @@ body {
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  }
+}
 
 .logoSVG img {
   height: 350px;
@@ -252,4 +251,76 @@ justify-content: center;
 .container-contact img:hover {
   opacity: 0.5;
   transition: opacity ease 0.5s;
+}
+
+#adminPage {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/photo/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.loginBox {
+  border: 2px solid #000000;
+  border-radius: 20px;
+  height: 26%;
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.52);
+  color: white;
+}
+
+.loginBox p {
+  text-transform: uppercase;
+}
+
+.loginBox input {
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 5px;
+  height: 15px;
+  background-color: transparent;
+}
+
+#sendButton {
+  background-color: #000;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  height: 30px;
+  width: 100px;
+  margin-top: 10px;
+  color: white;
+}
+
+.formulaire {
+  display: flex;
+  justify-content: center;
+}
+.formulaire input[type=text], textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+  height: 15px;
+  background-color: transparent;
+}
+textarea {
+  margin-bottom: -4px;
+
+}
+.formulaire #sendButton {
+  background-color: #000;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  height: 30px;
+  width: 100px;
+  margin-top: 10px;
+  color: white;
 }

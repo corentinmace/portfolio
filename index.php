@@ -141,7 +141,7 @@
                     <div data-aos="zoom-in" data-aos-delay="100" class="container-project">
                         <h2>Discord RPG BOT</h2>
                         <h5>Language : DiscordJS (NodeJs)</h5>
-                        <h4>Description : A Discord BOT that will make a RPG game automaticly</h3>
+                        <h4>Description : A Discord BOT that will make a RPG game automaticly</h4>
                         <h4><a href="https://github.com/corentinmace/bot-discord-jdr">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
                   </div>
                 </a>
@@ -150,7 +150,7 @@
                     <div data-aos="zoom-in" data-aos-delay="200" class="container-project">
                         <h2>Program'Ligue BOT</h2>
                         <h5>Language : DiscordJS (NodeJs)</h5>
-                        <h4>Description : Discord BOT for the server Program'Ligue FR.</h3>
+                        <h4>Description : Discord BOT for the server Program'Ligue FR.</h4>
                         <h4><a href="https://github.com/corentinmace/program-ligue-djs.bot">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
                     </div>
                 </a>
@@ -158,7 +158,7 @@
                   <div data-aos="zoom-in" data-aos-delay="300" class="container-project">
                         <h2>Portfolio</h2>
                         <h5>Language : HTML - CSS - Javascript</h5>
-                        <h4>Description : My portfolio</h3>
+                        <h4>Description : My portfolio</h4>
                         <h4><a href="https://github.com/corentinmace/portfolio">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
                   </div>
                 </a>
@@ -167,7 +167,7 @@
                     <div data-aos="zoom-in" data-aos-delay="400" class="container-project">
                         <h2>GoPro Timelapse</h2>
                         <h5>Language : Arduino</h5>
-                        <h4>Description : That's a module that will be able to go from a circular direction to another with a motor and a choice</h3>
+                        <h4>Description : That's a module that will be able to go from a circular direction to another with a motor and a choice</h4>
                         <h4><a href="https://github.com/corentinmace/timelapse-gopro-arduino">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
                     </div>
                   </a>
@@ -176,7 +176,7 @@
                     <div data-aos="zoom-in" data-aos-delay="500" class="container-project">
                         <h2>Thermometer on 4-digit</h2>
                         <h5>Language : Arduino</h5>
-                        <h4>Description : Thermometer that will display the temperature on a 4-digit module</h3>
+                        <h4>Description : Thermometer that will display the temperature on a 4-digit module</h4>
                         <h4><a href="https://github.com/corentinmace/temp-4digit-arduino">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
                     </div>
                   </a>
@@ -185,7 +185,7 @@
                     <div data-aos="zoom-in" data-aos-delay="600" class="container-project">
                         <h2>Vulnerable Website</h2>
                         <h5>Language : PHP - HTML - CSS - Javascript</h5>
-                        <h4>Description : Vulnerable Website done for my startup "Hacking Challenge"</h3>
+                        <h4>Description : Vulnerable Website done for my startup "Hacking Challenge"</h4>
                         <h4><a href="https://github.com/corentinmace/vulnerable-website">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
                     </div>
                   </a>
@@ -194,6 +194,18 @@
             <div class="jumper"></div>
             <div id="contact">
                 <h1 data-aos="zoom-in">/ CONTACT /</h1>
+                <main>
+                  <div class="formulaire">
+                  <form action="assets/php/add.php" method="post">
+                    Mail :
+                    <input type="text" name="mail"  maxlength="50">
+                    Nom Prénom :
+                    <input type="text" name="pseudo"  maxlength="20">
+                    Message
+                    <textarea type="text" name="msg"></textarea>
+                    <input id="sendButton" type="submit" name="Envoyer" value="Envoyer">
+                  </form>
+                </div>
                 <div class="contacts">
               <div class="container-contact">
               <a href="https://twitter.com/cew_kuhaku"><img src="assets/img/svg/twitter.svg" alt="" height="70px" width="70px"></a>
