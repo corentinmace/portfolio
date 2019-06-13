@@ -1,0 +1,11 @@
+body {
+  font-family: 'Khand', sans-serif;
+  font-size: 120%;
+  color: #000;
+
+}
+
+@font-face {
+  src: url(../font/Kiona-Regular.ttf);
+  font-family: Kiona-Regular;
+}

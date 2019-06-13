@@ -1,0 +1,63 @@
+.sideInfo {
+  width: 50px;
+  position: sticky;
+  text-align: center;
+  top: 50%;
+  float: right;
+  display: none;
+  z-index: 1000;
+}
+
+.navElement{
+  text-decoration: none;
+  color: black;
+  opacity: 1;
+  font-size: 120%;
+  transform: rotate(-90deg);
+}
+
+.navElement:hover {
+  opacity: 1;
+}
+
+.navhome::before {
+  padding-right: 10px;
+  content: "À propos";
+  opacity: 0.2;
+  color: black;
+}
+
+.navabout::before {
+  padding-right: 10px;
+  content: "Projets";
+  opacity: 0.2;
+  color: black;
+}
+
+.navabout::after {
+  padding-left: 10px;
+  content: "Accueil";
+  opacity: 0.2;
+  color: black;
+}
+
+.navworks::before {
+  padding-right: 10px;
+  content: "Contact";
+  opacity: 0.2;
+  color: black;
+}
+
+.navworks::after {
+  padding-left: 10px;
+  content: "À propos";
+  opacity: 0.2;
+  color: black;
+}
+
+.navcontact::after {
+  padding-left: 10px;
+  content: "Projets";
+  opacity: 0.2;
+  color: black;
+}
