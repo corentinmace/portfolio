@@ -324,3 +324,39 @@ textarea {
   margin-top: 10px;
   color: white;
 }
+
+.sendButton {
+  background-color: #000;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  height: 30px;
+  width: 100px;
+  margin-top: 10px;
+  color: white;
+}
+
+.container-admin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.comp-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  padding: 17px;
+  height: 50%;
+}
+
+.comp-inner input{
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+  height: 15px;
+  background-color: transparent;
+}

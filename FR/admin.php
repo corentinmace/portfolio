@@ -11,14 +11,14 @@
     <main id="adminPage">
       <div class="loginBox">
         <p>Admin login</p>
-        <form action="assets/connexion.php">
+        <form method="post" action="assets/php/code.php">
           <label for="login">Login</label>
           <br>
           <input type="text" id="login" name="login">
           <br>
-          <label for="passwd">Password</label>
+          <label for="mdp">Password</label>
           <br>
-          <input type="password" id="passwd" name="passwd">
+          <input type="password" id="passwd" name="mdp">
           <br>
           <input id="sendButton" type="submit" value="Login">
         </form>

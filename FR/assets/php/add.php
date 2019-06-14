@@ -36,6 +36,7 @@ if (empty($mail) OR empty($msg) OR empty($pseudo)) {
       $sql->execute([$mail,$pseudo,$msg]);
       $dbh = null;
       echo "<h3>Message envoyé</h3>";
+      
       exit;
   }
 

@@ -203,7 +203,7 @@
                     <input type="text" name="pseudo"  maxlength="20">
                     Message
                     <textarea type="text" name="msg"></textarea>
-                    <input id="sendButton" type="submit" name="Envoyer" value="Envoyer">
+                    <input class="sendButton" type="submit" name="Envoyer" value="Envoyer">
                   </form>
                 </div>
                 <div class="contacts">

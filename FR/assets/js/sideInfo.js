@@ -22,7 +22,7 @@ window.addEventListener("scroll", function() {
         document.getElementById("nav").classList.remove("navcontact");
         document.getElementById("nav").classList.remove("navworks");
       document.getElementById("nav").classList.add("navabout");
-        document.getElementById("nav").innerHTML = "À propos";
+        document.getElementById("nav").innerHTML = "Moi";
 
 
 

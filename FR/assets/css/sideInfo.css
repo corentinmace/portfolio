@@ -22,7 +22,7 @@
 
 .navhome::before {
   padding-right: 10px;
-  content: "À propos";
+  content: "Moi";
   opacity: 0.2;
   color: black;
 }
@@ -50,7 +50,7 @@
 
 .navworks::after {
   padding-left: 10px;
-  content: "À propos";
+  content: "Moi";
   opacity: 0.2;
   color: black;
 }
