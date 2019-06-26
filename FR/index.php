@@ -106,58 +106,6 @@
                        echo "</a>";
                        }
                       ?>
-                  <!-- <a href="project/project1.html">
-                    <div data-aos="zoom-in" data-aos-delay="100" class="container-project">
-                        <h2>UF Dev - Plant'IO</h2>
-                        <h5>Electron - Arduino</h5>
-                        <h4>Description : Projet de plante connecté pour l'école Ynov Digital School</h4>
-                        <h4><a href="https://github.com/EloxFire/IOT-Project">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
-                  </div>
-                </a>
-                <a href="project/project6.html">
-                  <div data-aos="zoom-in" data-aos-delay="100" class="container-project">
-                      <h2>UF Infra - Inventaire+</h2>
-                      <h5>--</h5>
-                      <h4>Description : Projet d'infra reseau pour Ynov Digital School</h4>
-                      <h4><a href="">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
-                </div>
-              </a>
-
-                <a href="project/project3.html">
-                  <div data-aos="zoom-in" data-aos-delay="300" class="container-project">
-                        <h2>UF Web - Portfolio</h2>
-                        <h5>HTML - CSS - Javascript - PHP - SQL</h5>
-                        <h4>Description : Projet du portfolio pour l'école Ynov Digital School</h4>
-                        <h4><a href="https://github.com/corentinmace/portfolio">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
-                  </div>
-                </a>
-
-                  <a href="project/project4.html">
-                    <div data-aos="zoom-in" data-aos-delay="400" class="container-project">
-                        <h2>GoPro Timelapse</h2>
-                        <h5>Arduino</h5>
-                        <h4>Description : Module pour GoPro qui permettra d'optimiser un mouvement rotatif pour faire des timelapses</h4>
-                        <h4><a href="https://github.com/corentinmace/timelapse-gopro-arduino">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
-                    </div>
-                  </a>
-
-                  <a href="project/project5.html">
-                    <div data-aos="zoom-in" data-aos-delay="500" class="container-project">
-                        <h2>Thermometer on 4-digit</h2>
-                        <h5>Arduino</h5>
-                        <h4>Description : Thermometre qui affiche la temperature sur un module 4-digit</h4>
-                        <h4><a href="https://github.com/corentinmace/temp-4digit-arduino">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
-                    </div>
-                  </a>
-
-                  <a href="project/project2.html">
-                      <div data-aos="zoom-in" data-aos-delay="200" class="container-project">
-                          <h2>Program'Ligue BOT</h2>
-                          <h5>DiscordJS (NodeJs)</h5>
-                          <h4>Description : BOT Discord pour le serveur Program'Ligue FR.</h4>
-                          <h4><a href="https://github.com/corentinmace/program-ligue-djs.bot">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
-                      </div>
-                  </a> -->
               </div>
             </div>
             <div class="jumper"></div>
