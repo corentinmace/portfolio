@@ -43,7 +43,7 @@
 
 .navworks::before {
   padding-right: 10px;
-  content: "Contact";
+  content: "Pro";
   opacity: 0.2;
   color: black;
 }
@@ -54,10 +54,22 @@
   opacity: 0.2;
   color: black;
 }
-
-.navcontact::after {
+.navxp::after {
   padding-left: 10px;
   content: "Projets";
+  opacity: 0.2;
+  color: black;
+}
+
+.navxp::before {
+  padding-left: 10px;
+  content: "Contact";
+  opacity: 0.2;
+  color: black;
+}
+.navcontact::after {
+  padding-left: 10px;
+  content: "Pro";
   opacity: 0.2;
   color: black;
 }

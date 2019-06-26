@@ -15,6 +15,7 @@ window.addEventListener("scroll", function() {
       document.getElementById("nav").classList.remove("navworks");
       document.getElementById("nav").classList.remove("navcontact");
     document.getElementById("nav").classList.add("navhome");
+    document.getElementById("nav").classList.remove("navxp");
     document.getElementById("nav").innerHTML = "Accueil";
 
     } else if (window.scrollY <= getElementOffset("about")) {
@@ -22,6 +23,7 @@ window.addEventListener("scroll", function() {
         document.getElementById("nav").classList.remove("navcontact");
         document.getElementById("nav").classList.remove("navworks");
       document.getElementById("nav").classList.add("navabout");
+      document.getElementById("nav").classList.remove("navxp");
         document.getElementById("nav").innerHTML = "Moi";
 
 
@@ -31,8 +33,17 @@ window.addEventListener("scroll", function() {
       document.getElementById("nav").classList.remove("navabout");
         document.getElementById("nav").classList.remove("navcontact");
         document.getElementById("nav").classList.add("navworks");
+        document.getElementById("nav").classList.remove("navxp");
         document.getElementById("nav").innerHTML = "Projets";
 
+
+      } else if (window.scrollY <= getElementOffset("contact")) {
+          document.getElementById("nav").classList.remove("navhome");
+            document.getElementById("nav").classList.remove("navabout");
+          document.getElementById("nav").classList.remove("navworks");
+          document.getElementById("nav").classList.remove("navcontact");
+          document.getElementById("nav").classList.add("navxp");
+          document.getElementById("nav").innerHTML = "Pro";
 
 
 
@@ -40,6 +51,7 @@ window.addEventListener("scroll", function() {
         document.getElementById("nav").classList.remove("navhome");
           document.getElementById("nav").classList.remove("navabout");
         document.getElementById("nav").classList.remove("navworks");
+        document.getElementById("nav").classList.remove("navxp");
         document.getElementById("nav").classList.add("navcontact");
         document.getElementById("nav").innerHTML = "Contact";
 

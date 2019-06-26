@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142489538-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142489538-1');
+</script>
+
 <html lang="en" dir="ltr">
 
 <head>
@@ -10,7 +20,7 @@
     <link rel="stylesheet" href="assets/css/sideInfo.css">
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <link rel="stylesheet" media="screen" href="assets/css/responsive.css">
-    <script src="assets/js/smooth.js"></script>
+    <script src="assets/js/scroll.js"></script>
     <script src="assets/js/anime.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="assets/js/sideInfo.js"></script>
@@ -26,9 +36,6 @@
     </div>
     <div id="content"></div>
         <main>
-            <div class="sideInfo">
-                <p id="nav" class="navElement navhome">Accueil</p>
-            </div>
             <div id="logo" class="logoSVG">
 
                 <a href="#accueil"><img src="assets/img/photo/logo.png" alt="Logo Corentin Mace" /></a>
@@ -58,86 +65,48 @@
                 </div>
                 <h6 data-aos="zoom-in">Mes compétences</h6>
                 <div class="skills">
-                    <div data-aos="fade-up" data-aos-delay="100" class="container-skill">
-                        <img src="assets/img/svg/html5.svg" alt="" width="100px" height="100px">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>70%</p>
-                            </div>
-                        </div>
-                        <p>HTML</p>
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="200" class="container-skill">
-                        <img src="assets/img/svg/css3.svg" alt="" width="100px" height="100px">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>65%</p>
-                            </div>
-                        </div>
-                        <p>CSS</p>
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="300" class="container-skill">
-                        <img src="assets/img/svg/javascript.svg" alt="" width="100px" height="100px">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>20%</p>
-                            </div>
-                        </div>
-                        <p>Javascript</p>
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="400" class="container-skill">
-                        <img src="assets/img/svg/nodejs.svg" alt="" width="100px" height="100px">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>20%</p>
-                            </div>
-                        </div>
-                        <p>NodeJS</p>
-                    </div>
-                    <div data-aos="fade-down" data-aos-delay="500" class="container-skill">
-                        <img src="assets/img/svg/photography.svg" alt="" width="100px" height="100px">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>85%</p>
-                            </div>
-                        </div>
-                        <p>Photographie</p>
-                    </div>
-                    <div data-aos="fade-down" data-aos-delay="600" class="container-skill">
-                        <img src="assets/img/svg/photoshop.svg" alt="" width="100px" height="100px">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>85%</p>
-                            </div>
-                        </div>
-                        <p>Photoshop</p>
-                    </div>
-                    <div data-aos="fade-down" data-aos-delay="700" class="container-skill">
-                        <img src="assets/img/svg/lightroom.svg" alt="" width="100px" height="100px">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>90%</p>
-                            </div>
-                        </div>
-                        <p>Lightroom</p>
-                    </div>
-                    <div data-aos="fade-down" data-aos-delay="800" class="container-skill">
-                        <img src="assets/img/svg/premiere.svg" alt="" width="100px" height="100px">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>75%</p>
-                            </div>
-                        </div>
-                        <p>Premiere Pro</p>
-                    </div>
+                    <?php
+                        $parameters = parse_ini_file('db.ini');
+                        $connect = new PDO($parameters['url'], $parameters['user'], $parameters['password']);
+                        $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                        $sql = $connect->prepare("SELECT * FROM competences");
+                        $sql->execute();
+                         while ($row = $sql->fetch()) {
+                           echo  "<div data-aos='fade-down' data-aos-delay='150' class='container-skill'>";
+                                 echo "<img src='assets/img/svg/".$row['image']."' alt='' width='100px' height='100px'>";
+                               echo "<div class='overlay'>";
+                                   echo  "<div class='text'>";
+                                       echo  "<p>".$row['pourcentage']."</p>";
+                                   echo  "</div>";
+                                 echo "</div>";
+                               echo "<p>".$row['nom_comp']."</p>";
+                           echo  "</div>";
+                         }
+                        ?>
                 </div>
             </div>
             <div class="jumper"></div>
             <div id="works">
                 <h1 data-aos="zoom-in">/ MES PROJETS /</h1>
-
                 <div class="projects">
-                  <a href="project/project1.html">
+                  <?php
+                      $parameters = parse_ini_file('db.ini');
+                      $connect = new PDO($parameters['url'], $parameters['user'], $parameters['password']);
+                      $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                      $sql = $connect->prepare("SELECT * FROM projets");
+                      $sql->execute();
+                       while ($row = $sql->fetch()) {
+                        echo "<a href=''>";
+                          echo "<div data-aos='zoom-in' data-aos-delay='100' class='container-project'>";
+                               echo "<h2>".$row['nom_projet']."</h2>";
+                               echo "<h5>".$row['langage_used']."</h5>";
+                               echo "<h4>Description : ".$row['description']."</h4>";
+                               echo "<h4><a href='".$row['lien_github']."'>Github <img src='assets/img/svg/link.svg' alt='' width='20px' height='20px'></a></h4>";
+                        echo "</div>";
+                       echo "</a>";
+                       }
+                      ?>
+                  <!-- <a href="project/project1.html">
                     <div data-aos="zoom-in" data-aos-delay="100" class="container-project">
                         <h2>UF Dev - Plant'IO</h2>
                         <h5>Electron - Arduino</h5>
@@ -188,7 +157,28 @@
                           <h4>Description : BOT Discord pour le serveur Program'Ligue FR.</h4>
                           <h4><a href="https://github.com/corentinmace/program-ligue-djs.bot">Github <img src="assets/img/svg/link.svg" alt="" width="20px" height="20px"></a></h4>
                       </div>
-                  </a>
+                  </a> -->
+              </div>
+            </div>
+            <div class="jumper"></div>
+            <div id="xp-pro">
+              <h1 data-aos="zoom-in">/ EXPERIENCES PROFESSIONNELLES /</h1>
+              <div class="xp-pro">
+              <?php
+                  $parameters = parse_ini_file('db.ini');
+                  $connect = new PDO($parameters['url'], $parameters['user'], $parameters['password']);
+                  $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                  $sql = $connect->prepare("SELECT * FROM experience_pro");
+                  $sql->execute();
+                   while ($row = $sql->fetch()) {
+                      echo "<div data-aos='zoom-in' data-aos-delay='100' class='container-xp-pro'>";
+                      echo "<h2>".$row['nom_forma']."</h2>";
+                      echo "<h4>".$row['place']."</h4>";
+                      echo "<h5>".$row['date_forma']."</h5>";
+                      echo "<h4>".$row['description']."</h4>";
+                    echo "</div>";
+                   }
+                  ?>
               </div>
             </div>
             <div class="jumper"></div>

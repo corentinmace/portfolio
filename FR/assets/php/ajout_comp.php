@@ -20,16 +20,24 @@ $param = parse_ini_file('../../db.ini');
     $percent="";
   }
 
+  if(isset($_POST['image'])) {
+    $image=$_POST['image'];
+  } else {
+    $image="";
+  }
+
+
   if(empty($comp) OR empty($percent)) {
     echo '<font color="red">Veuillez remplir tout les champs</font>';
     return;
   } else {
-    $query = "INSERT INTO competences(nom_comp, pourcentage)  VALUES(?,?)";
+    $query = "INSERT INTO competences(nom_comp, pourcentage, image)  VALUES(?,?,?)";
     $sql = $dbh->prepare($query);
-    $sql->execute([$comp,$percent]);
+    $sql->execute([$comp,$percent,$image]);
     $dbh = null;
     var_dump($comp . $percent);
-    echo('Competence ajoutée');
+    // echo('Competence ajoutée');
+    header('location: admin_page.php');
     exit;
   }
 ?>
