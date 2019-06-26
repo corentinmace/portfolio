@@ -8,10 +8,10 @@ $param = parse_ini_file('../../db.ini');
       exit;
   }
 
-  if(isset($_POST['comp'])) {
-    $comp=$_POST['comp'];
+  if(isset($_POST['nom'])) {
+    $nom=$_POST['nom'];
   } else {
-    $comp="";
+    $nom="";
   }
 
   if(isset($_POST['percent'])) {
@@ -27,15 +27,15 @@ $param = parse_ini_file('../../db.ini');
   }
 
 
-  if(empty($comp) OR empty($percent)) {
+  if(empty($nom) OR empty($percent)) {
     echo '<font color="red">Veuillez remplir tout les champs</font>';
     return;
   } else {
     $query = "INSERT INTO competences(nom_comp, pourcentage, image)  VALUES(?,?,?)";
     $sql = $dbh->prepare($query);
-    $sql->execute([$comp,$percent,$image]);
+    $sql->execute([$nom,$percent,$image]);
     $dbh = null;
-    var_dump($comp . $percent);
+    var_dump($nom . $percent);
     // echo('Competence ajoutée');
     header('location: admin_page.php');
     exit;
