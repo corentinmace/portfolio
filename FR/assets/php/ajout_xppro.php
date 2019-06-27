@@ -42,7 +42,7 @@ $param = parse_ini_file('../../db.ini');
     $sql->execute([$nom_forma,$place,$date_forma,$description]);
     $dbh = null;
     // echo('Competence ajoutée');
-    header('location: admin_page.php');
+    header('location: admin_page.php#xp-pro');
     exit;
   }
 ?>

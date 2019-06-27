@@ -36,6 +36,6 @@ $param = parse_ini_file('../../db.ini');
         // echo "<form action='admin_page.php' method='get'>
         //     <input type='submit' value='Retour'>
         // </form>";
-        header('location: admin_page.php');
+        header('location: admin_page.php#competence-container');
         exit;
     }

@@ -42,10 +42,10 @@ $param = parse_ini_file('../../db.ini');
         var_dump($query);
         $sql->execute(array(":new_name_forma"=>$new_name_forma,":name_forma"=>$name_forma,":place"=>$place, ":date_forma"=>$date_forma, ":description"=>$description));
         $dbh = null;
-        echo('Projet modifiée !');
-        echo "<form action='admin_page.php' method='get'>
-            <input type='submit' value='Retour'>
-        </form>";
-        // header('location: admin_page.php#projet_container');
+        // echo('Projet modifiée !');
+        // echo "<form action='admin_page.php' method='get'>
+        //     <input type='submit' value='Retour'>
+        // </form>";
+        header('location: admin_page.php#xp-pro');
         exit;
     }

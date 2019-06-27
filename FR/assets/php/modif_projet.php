@@ -42,10 +42,6 @@ $param = parse_ini_file('../../db.ini');
         var_dump($query);
         $sql->execute(array(":new_name_projet"=>$new_name_projet,":name_projet"=>$name_projet,":description"=>$description, ":langage_used"=>$langage_used, ":lien"=>$lien));
         $dbh = null;
-        echo('Projet modifiée !');
-        echo "<form action='admin_page.php' method='get'>
-            <input type='submit' value='Retour'>
-        </form>";
-        // header('location: admin_page.php#projet_container');
+        header('location: admin_page.php#projet-container');
         exit;
     }

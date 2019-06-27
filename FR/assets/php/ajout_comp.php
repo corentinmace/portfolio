@@ -37,7 +37,7 @@ $param = parse_ini_file('../../db.ini');
     $dbh = null;
     var_dump($nom . $percent);
     // echo('Competence ajoutée');
-    header('location: admin_page.php');
+    header('location: admin_page.php#competence-container');
     exit;
   }
 ?>

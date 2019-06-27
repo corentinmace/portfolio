@@ -35,9 +35,18 @@ if (empty($mail) OR empty($msg) OR empty($pseudo)) {
       $sql = $dbh->prepare($query);
       $sql->execute([$mail,$pseudo,$msg]);
       $dbh = null;
-      echo "<h3>Message envoyé</h3>";
-      
+      $message = $_POST['msg'];
+      $headers = "Mail : ".$mail."";
+      $to = "corentin.mace@ynov.com";
+      $subject = "De : ".$pseudo." ";
+
+
+      mail($to,$headers,$subject,$message);
+      header('location: ../../index.php');
+
+
       exit;
   }
+
 
 ?>

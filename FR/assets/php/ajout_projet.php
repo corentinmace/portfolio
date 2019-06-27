@@ -43,7 +43,7 @@ $param = parse_ini_file('../../db.ini');
     $dbh = null;
     var_dump($comp . $percent);
     // echo('Competence ajoutée');
-    header('location: admin_page.php');
+    header('location: admin_page.php#projet-container');
     exit;
   }
 ?>

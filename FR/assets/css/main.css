@@ -355,7 +355,7 @@ textarea {
 
 .comp-inner-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
   justify-content: space-between;
@@ -370,13 +370,27 @@ textarea {
 }
 
 .navAdmin {
-  height: 28px;
+
   background-color: black;
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  width: 10%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  padding: 50px;
+}
+
+.navAdmin__container {
+  display: flex;
+}
+
+.navAdmin__container img {
+  max-width: 20px;
 }
 
 .navAdmin a {
@@ -416,4 +430,15 @@ textarea {
 
 .message-container h5 {
   text-decoration: underline;
+}
+
+#admin_page_main {
+  max-width: 80%;
+  margin-left: 15%;
+}
+
+
+#admin_page_main textarea {
+  width: 750px;
+  height: 250px;
 }
