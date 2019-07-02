@@ -46,10 +46,7 @@ window.onload = function() {
       delay: 300
     });
 
-    setTimeout(function()
-    {
-  document.getElementsByClassName('sideInfo')[0].style.display = 'block';
-}, 2000);
+
 }
 
 // Wrap every letter in a span

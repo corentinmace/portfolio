@@ -26,6 +26,9 @@
     <script src="assets/js/sideInfo.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/loader.css">
+    <meta title="Portfolio de Corentin Macé">
+    <meta description="Portfolio de Corentin Macé, Etudiant en informatique à Ynov Digital School - Aix en Provence">
+    <meta keyword="Portfolio Macé Corentin CV Competences Projet Informatique">
 </head>
 
 <body>
