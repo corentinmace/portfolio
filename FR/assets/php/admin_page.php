@@ -1,3 +1,17 @@
+<?php
+
+session_start();
+
+if (strlen($_SESSION['login']) < 1){
+
+  header('location: ../../admin.php');
+
+}
+
+ ?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 

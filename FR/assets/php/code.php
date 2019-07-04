@@ -10,10 +10,9 @@
 		var_dump(array("login" => $_POST['login'], "password" => $_POST['mdp']));
 		$stmt->execute(array(":login" => $_POST['login'], ":password" => $_POST['mdp']));
 
-		$result = $stmt->fetch();
-		if ($result != null){
-			$_SESSION['login'] = $login;
-			$_SESSION['pass'] = $pass;
+		$result = $stmt->fetch(PDO::FETCH_ASSOC);
+		if ($stmt->rowCount() == 1){
+			$_SESSION['login'] = $result['pseudo'];
 			header('location: admin_page.php');
 			exit;
 		}
