@@ -1,11 +1,18 @@
 @media only screen and (max-width: 1240px) {
   .ml11 {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 }
 
 @media only screen and (max-width: 1080px) {
   .container-project h2 {
-    font-size: 2em;
+    font-size: 1.5em;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .ml11 {
+    font-size: 1.5em;
   }
 }

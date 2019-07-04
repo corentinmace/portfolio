@@ -17,18 +17,16 @@
     <script src="assets/js/jquery.js"></script>
     <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/sideInfo.css">
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <link rel="stylesheet" media="screen" href="assets/css/responsive.css">
     <script src="assets/js/scroll.js"></script>
     <script src="assets/js/anime.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="assets/js/sideInfo.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/loader.css">
     <meta title="Portfolio de Corentin Macé">
-    <meta description="Portfolio de Corentin Macé, Etudiant en informatique à Ynov Digital School - Aix en Provence">
-    <meta keyword="Portfolio Macé Corentin CV Competences Projet Informatique">
+    <meta name="description" content="Portfolio de Corentin Macé, Etudiant en informatique à Ynov Digital School - Aix en Provence">
+    <meta name="keywords" content="Portfolio Macé Corentin CV Competences Projet Informatique">
 </head>
 
 <body>
