@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin.php
+Disallow: /db.ini
+Disallow: /assets/php/admin_page.php
+Disallow: /assets/php/*
