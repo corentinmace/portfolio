@@ -73,15 +73,15 @@
                         $sql = $connect->prepare("SELECT * FROM competences");
                         $sql->execute();
                          while ($row = $sql->fetch()) {
-                           echo  "<div data-aos='fade-down' data-aos-delay='150' class='container-skill'>";
-                                 echo "<img src='assets/img/svg/".$row['image']."' alt='' width='100px' height='100px'>";
-                               echo "<div class='overlay'>";
-                                   echo  "<div class='text'>";
-                                       echo  "<p>".$row['pourcentage']."</p>";
-                                   echo  "</div>";
-                                 echo "</div>";
-                               echo "<p>".$row['nom_comp']."</p>";
-                           echo  "</div>";
+                           echo  "<div data-aos='fade-down' data-aos-delay='150' class='container-skill'>
+                                 <img src='assets/img/svg/".$row['image']."' alt='' width='100px' height='100px'>
+                               <div class='overlay'>
+                                   <div class='text'>
+                                       <p>".$row['pourcentage']."</p>
+                                   </div>
+                                 </div>
+                               <p>".$row['nom_comp']."</p>
+                           </div>";
                          }
                         ?>
                 </div>
@@ -97,14 +97,14 @@
                       $sql = $connect->prepare("SELECT * FROM projets");
                       $sql->execute();
                        while ($row = $sql->fetch()) {
-                        echo "<a href=''>";
-                          echo "<div data-aos='zoom-in' data-aos-delay='100' class='container-project'>";
-                               echo "<h2>".$row['nom_projet']."</h2>";
-                               echo "<h5>".$row['langage_used']."</h5>";
-                               echo "<h4>Description : ".$row['description']."</h4>";
-                               echo "<h4><a href='".$row['lien_github']."'>Github <img src='assets/img/svg/link.svg' alt='' width='20px' height='20px'></a></h4>";
-                        echo "</div>";
-                       echo "</a>";
+                        echo "<a href=''>
+                          <div data-aos='zoom-in' data-aos-delay='100' class='container-project'>
+                               <h2>".$row['nom_projet']."</h2>
+                               <h5>".$row['langage_used']."</h5>
+                               <h4>Description : ".$row['description']."</h4>
+                               <h4><a href='".$row['lien_github']."'>Github <img src='assets/img/svg/link.svg' alt='' width='20px' height='20px'></a></h4>
+                        </div>
+                       </a>";
                        }
                       ?>
               </div>
@@ -120,12 +120,12 @@
                   $sql = $connect->prepare("SELECT * FROM experience_pro");
                   $sql->execute();
                    while ($row = $sql->fetch()) {
-                      echo "<div data-aos='zoom-in' data-aos-delay='100' class='container-xp-pro'>";
-                      echo "<h2>".$row['nom_forma']."</h2>";
-                      echo "<h4>".$row['place']."</h4>";
-                      echo "<h5>".$row['date_forma']."</h5>";
-                      echo "<h4>".$row['description']."</h4>";
-                    echo "</div>";
+                      echo "<div data-aos='zoom-in' data-aos-delay='100' class='container-xp-pro'>
+                    <h2>".$row['nom_forma']."</h2>
+                      <h4>".$row['place']."</h4>
+                      <h5>".$row['date_forma']."</h5>
+                      <h4>".$row['description']."</h4>
+                    </div>";
                    }
                   ?>
               </div>
